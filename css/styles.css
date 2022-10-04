@@ -1,3 +1,14 @@
+/* PALETA DE COLORES */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #517664;
+    --secundario: #7EACA1;
+    --claro: #EFF1F3;
+    --navegacion: #D6E5E3;
+    /* La paleta (al igual que la fuente en el index.html) la elegí al azar, para probar */
+}
+
 /* GLOBALES */
 html {
     font-size: 62.5%;
@@ -27,4 +38,69 @@ h3 {
 
 h1, h2, h3 {
     text-align: center;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;    
+}
+
+/* BARRA DE NAVEGACIÓN */
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 550px) {
+    .navegacion {
+        flex-direction: row;
+    }
+}
+
+.navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.navegacion a:hover {
+    background-color: var(--navegacion);
+    color: var(--oscuro);
+}
+
+/* STARTERS */
+@media (min-width: 768px) {
+    .starters {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+.starter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.starter h3 {
+    color: var(--secundario);
+}
+
+.starter .pokemon {
+    height: 20rem;
+    width: 20rem;
+    background-color: var(--claro);
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
