@@ -3,7 +3,8 @@ let datos = [];
 
 fetch(url)
     .then(response => response.json())
-    .then(data => { console.log(data)
+    .then(data => {
+        console.log(data)
         datos = data.datos
         console.log(datos)
 
@@ -12,11 +13,11 @@ fetch(url)
         for (tipoagua of datos) {
             cad += `
         <div class="tarjeta">
-                <img src="${tipoagua.img}" alt="${tipoagua.nombre}">
-                    <div class="cuerpo">
-                        <h4>Nombre:${tipoagua.name}</h4>
-                    </div>
-                </div>
+            <img src="${tipoagua.img}" alt="${tipoagua.nombre}">
+                <div class="cuerpo">
+                     <h4>Nombre:${tipoagua.name}</h4>
+                 </div>
+        </div>
         `
         }
 
