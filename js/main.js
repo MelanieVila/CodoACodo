@@ -1,3 +1,5 @@
+// No funciona, lo copié de la clase plus que nos dio el jueves la profe.
+
 let url = "./js/tipoagua.json"
 let datos = [];
 
