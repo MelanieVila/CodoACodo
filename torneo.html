@@ -72,6 +72,37 @@
         <section><img src="..." class="iconotorneo"></section>
     </div>
 
+    <section>
+        <form class="formulario">
+        <fieldset>
+            <legend>¡Reservá tu lugar!</legend>
+            <div class="contenedor-campos">
+                <div class="campo"><label>Nombre y Apellido</label>
+                <input class="input-campo" id="nombreyapellido" type="text" name="nombreyapellido" placeholder="Nombre y Apellido" required></div>
+
+                <div class="campo"><label>DNI</label>
+                <input class="input-campo" id="DNI" type="number" name="DNI" placeholder="DNI" required></div>
+
+                <div class="campo"><label>Correo electrónico</label>
+                <input class="input-campo" id="email" type="email" name="email" placeholder="Correo electrónico" required></div>
+
+                <div class="campo"><label>Turno</label>
+                <input class="input-campo" id="turno" type="radio" name="turno" required> Mañana
+                <input class="input-campo" id="turno" type="radio" name="turno"> Tarde</div>
+
+                <div class="campo"><label>Tipo de mazo que llevaré</label>
+                <input class="input-campo" id="mazo" type="radio" name="mazo" required> Planta
+                <input class="input-campo" id="mazo" type="radio" name="mazo"> Fuego
+                <input class="input-campo" id="mazo" type="radio" name="mazo"> Agua</div>
+
+                <div class="campo"><label>Comentarios adicionales</label>
+                <textarea class="input-campo"></textarea></div>
+            </div>
+            <div class="alinear-boton"><input class="boton" type="submit" value="Enviar"></div>
+        </fieldset>
+        </form>
+    </section>
+
     <footer>
         <div class="footer footerindex">
             <h3><img src="img/Icono.png" class="icono"/> POKETORNEOS</h3>
@@ -87,15 +118,10 @@
                 arreglar grid y flexbox
 
                 ubicación del torneo (api geolocalización)
-                
-                formulario:
-                        Nombre y apellido {text}
-                        DNI {number}
-                        Correo electrónico {email}
-                        Turno: mañana (11 hs.) o tarde (16 hs.) {checkbox}
-                        Tipo de mazo que llevaré: planta fuego agua {checkbox}
-                        Comentarios adicionales: {textarea}
             -->
+    
+    <script src="./js/main.js"></script>
+    <script src="./js/formulario.js"></script>
 </body>
 
 </html>
