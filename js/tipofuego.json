@@ -1,0 +1,94 @@
+{
+    "tipofuego": [
+        {
+            "id": 19,
+            "nombre": "Charmander",
+            "img": "img/004Charmander.png"
+        },
+        {
+            "id": 20,
+            "nombre": "Charmeleon",
+            "img": "img/005Charmeleon.png"
+        },
+        {
+            "id": 21,
+            "nombre": "Charizard",
+            "img": "img/006Charizard.png"
+        },
+        {
+            "id": 22,
+            "nombre": "Cyndaquil",
+            "img": "img/155Cyndaquil.png"
+        },
+        {
+            "id": 23,
+            "nombre": "Quilava",
+            "img": "img/156Quilava.png"
+        },
+        {
+            "id": 24,
+            "nombre": "Typhlosion",
+            "img": "img/157Typhlosion.png"
+        },
+        {
+            "id": 25,
+            "nombre": "Torchic",
+            "img": "img/255Torchic.png"
+        },
+        {
+            "id": 26,
+            "nombre": "Combusken",
+            "img": "img/256Combusken.png"
+        },
+        {
+            "id": 27,
+            "nombre": "Blaziken",
+            "img": "img/257Blaziken.png"
+        },
+        {
+            "id": 28,
+            "nombre": "Chimchar",
+            "img": "img/390Chimchar.png"
+        },
+        {
+            "id": 29,
+            "nombre": "Monferno",
+            "img": "img/391Monferno.png"
+        },
+        {
+            "id": 30,
+            "nombre": "Infernape",
+            "img": "img/392Infernape.png"
+        },
+        {
+            "id": 31,
+            "nombre": "Tepig",
+            "img": "img/498Tepig.png"
+        },
+        {
+            "id": 32,
+            "nombre": "Pignite",
+            "img": "img/499Pignite.png"
+        },
+        {
+            "id": 33,
+            "nombre": "Emboar",
+            "img": "img/590Emboar.png"
+        },
+        {
+            "id": 34,
+            "nombre": "Fennekin",
+            "img": "img/653Fennekin.png"
+        },
+        {
+            "id": 35,
+            "nombre": "Braixen",
+            "img": "img/654Braixen.png"
+        },
+        {
+            "id": 36,
+            "nombre": "Delphox",
+            "img": "img/655Delphox.png"
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "tipoplanta": [
+        {
+            "id": 37,
+            "nombre": "Bulbasaur",
+            "img": "img/001Bulbasaur.png"
+        },
+        {
+            "id": 38,
+            "nombre": "Ivysaur",
+            "img": "img/002Ivysaur.png"
+        },
+        {
+            "id": 39,
+            "nombre": "Venusaur",
+            "img": "img/003Venusaur.png"
+        },
+        {
+            "id": 40,
+            "nombre": "Chikorita",
+            "img": "img/152Chikorita.png"
+        },
+        {
+            "id": 41,
+            "nombre": "Bayleef",
+            "img": "img/153Bayleef.png"
+        },
+        {
+            "id": 42,
+            "nombre": "Meganium",
+            "img": "img/154Meganium.png"
+        },
+        {
+            "id": 43,
+            "nombre": "Treecko",
+            "img": "img/252Treecko.png"
+        },
+        {
+            "id": 44,
+            "nombre": "Grovyle",
+            "img": "img/253Grovyle.png"
+        },
+        {
+            "id": 45,
+            "nombre": "Sceptile",
+            "img": "img/254Sceptile.png"
+        },
+        {
+            "id": 46,
+            "nombre": "Turtwig",
+            "img": "img/387Turtwig.png"
+        },
+        {
+            "id": 47,
+            "nombre": "Grotle",
+            "img": "img/388Grotle.png"
+        },
+        {
+            "id": 48,
+            "nombre": "Torterra",
+            "img": "img/389Torterra.png"
+        },
+        {
+            "id": 49,
+            "nombre": "Snivy",
+            "img": "img/495Snivy.png"
+        },
+        {
+            "id": 50,
+            "nombre": "Servine",
+            "img": "img/496Servine.png"
+        },
+        {
+            "id": 51,
+            "nombre": "Serperior",
+            "img": "img/497Serperior.png"
+        },
+        {
+            "id": 52,
+            "nombre": "Chespin",
+            "img": "img/650Chespin.png"
+        },
+        {
+            "id": 53,
+            "nombre": "Quilladin",
+            "img": "img/651Quilladin.png"
+        },
+        {
+            "id": 54,
+            "nombre": "Chesnaught",
+            "img": "img/652Chesnaught.png"
+        }
+    ]
+}
