@@ -30,4 +30,5 @@ fetch(url)
         document.getElementById("tipoagua").innerHTML = cad
 
     }
-    );
+    )
+*/
