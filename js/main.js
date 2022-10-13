@@ -1,3 +1,29 @@
+const { createApp } = Vue //creo un objeto VUE llamado createApp
+
+createApp({
+    data() {
+        return {
+            url: 'https://api.sampleapis.com/wines/reds',
+            vinos: []
+        }
+    },
+    methods: {
+        fetchData(url) {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    this.vinos = data
+                    console.log(this.vinos)
+                })
+        }
+    },
+    created() {
+        this.fetchData(this.url)
+    }
+}).mount('#app')
+
+
+
 /* No funciona, lo copié de la clase plus que nos dio el jueves la profe.
 
 let url = "./js/tipoagua.json"
