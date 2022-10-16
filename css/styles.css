@@ -70,15 +70,18 @@ h1, h2, h3 {
 
 .boton {
     background-color: var(--secundario);
+    box-shadow: 0px 5px 5px 0px rgba(107,107,107,1);
     color: var(--blanco);
     padding: .8rem 3rem;
     margin-top: 1rem;
     font-size: 2rem;
+    font-family: 'Press Start 2P';
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
+    /*font-weight: bold;*/
     border-radius: .8rem;
     border: none;
+
 }
 
 .svg {
@@ -283,6 +286,23 @@ span {
     align-items: center;
 }
 
+.footer a{
+    text-decoration: none;
+    padding: auto;
+    align-items: center;
+}
+
+.footer a:visited{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+.footer h3{
+    margin:0;
+}
+
+
 @media (min-width: 480px) {
     .footer {
         flex-direction: row;
@@ -306,10 +326,13 @@ span {
 }
 
 .icono {
+    margin:1rem;
     height: 2rem;
     width: 2rem;
     background-color: var(--oscuro);
     border-radius: 50%;
+    align-items: center;
+    
 }
 
 /* FORMULARIO */
