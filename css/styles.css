@@ -278,6 +278,24 @@ span {
     border-radius: 50%;
 }
 
+/* CAROUSEL PROVISORIO */
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: scale-down;
+    scroll-snap-align: center;
+  }
+
 /* FOOTER */
 .footer {
     display: flex;
