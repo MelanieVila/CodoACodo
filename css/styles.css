@@ -147,9 +147,11 @@ h1, h2, h3 {
 .navegacion a {
     color: var(--blanco);
     text-decoration: none;
+    text-align: center;
     font-size: 2rem;
     font-weight: 500;
     padding: 1rem;
+    width: 100%;
 }
 
 .navegacion a:hover {
@@ -279,11 +281,23 @@ span {
 }
 
 /* CAROUSEL PROVISORIO */
+.descripcionpremios {
+    max-width: 85rem;
+    margin: 2rem auto;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .slider-container {
     display: flex;
     width: 100%;
     height: 100vh;
+    padding: 0;
+    scale: 50%;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     
@@ -292,6 +306,8 @@ span {
   .slider-container img {
     flex: 0 0 100%;
     width: 100%;
+    margin:0;
+    padding:0;
     object-fit: scale-down;
     scroll-snap-align: center;
   }
