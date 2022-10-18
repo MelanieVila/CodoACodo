@@ -245,6 +245,11 @@ span {
 
 .justify {
     text-align: justify;
+    margin: 0 2.5rem;
+}
+
+.left{
+    margin: 0 2.5rem; 
 }
 
 .descripcionagua {
@@ -294,6 +299,7 @@ span {
     margin: 1rem auto;
 }
 
+
 @media (min-width: 768px) {
     .descripciontorneoright {
         display: grid;
@@ -308,9 +314,6 @@ span {
     }
 }
 
-.justify {
-    text-align: justify;
-}
 
 .iconotorneo {
     height: 5rem;
@@ -351,6 +354,7 @@ span {
     text-decoration: none;
     padding: auto;
     align-items: center;
+    
 }
 
 .footer a:visited{
@@ -362,6 +366,7 @@ span {
 .footer h3{
     margin:0;
     font-weight: bold;
+    font-size: 2rem;
     
 }
 

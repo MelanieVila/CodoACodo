@@ -27,7 +27,7 @@
     </header>
 
     <section>
-        <form class="formulario">
+        <form id="form" class="formulario" action="https://formspree.io/f/xeqdlgzw" method="POST">
         <fieldset>
             <legend>¡Reservá tu lugar!</legend>
             <div class="contenedor-campos">
@@ -41,13 +41,13 @@
                 <input class="input-campo" id="email" type="email" name="email" placeholder="Correo electrónico" required></div>
 
                 <div class="campo"><label>Turno</label>
-                <input class="input-camporadio" id="turno" type="radio" name="turno" required> Mañana</br>
-                <input class="input-camporadio" id="turno" type="radio" name="turno"> Tarde</div>
+                <input class="input-camporadio" id="turno" type="radio" name="turno" value="am" required> Mañana</br>
+                <input class="input-camporadio" id="turno" type="radio" name="turno" value="pm"> Tarde</div>
 
                 <div class="campo"><label>Tipo de mazo que llevaré</label>
-                <input class="input-camporadio" id="mazo" type="radio" name="mazo" required> Planta</br>
-                <input class="input-camporadio" id="mazo" type="radio" name="mazo"> Fuego</br>
-                <input class="input-camporadio" id="mazo" type="radio" name="mazo"> Agua</div>
+                <input class="input-camporadio" id="mazo" type="radio" name="mazo" value="planta" required> Planta</br>
+                <input class="input-camporadio" id="mazo" type="radio" name="mazo" value="fuego"> Fuego</br>
+                <input class="input-camporadio" id="mazo" type="radio" name="mazo" value="agua"> Agua</div>
 
                 <div class="campo"><label>Comentarios (opcional)</label>
                 <textarea class="input-campo"></textarea></div>
@@ -67,7 +67,27 @@
         </div>
     </footer>
     
-    <script src="./js/formulario.js"></script>
+    <script>
+        const $form = document.querySelector ('#form')
+
+        $form.addEventListener('submit', handleSubmit)
+
+        async function handleSubmit(event){
+            event.preventDefault()
+            const form = new FormData(this)
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            if (response.ok){
+                this.reset(),
+                alert ('¡Gracias por inscribirte al Poketorneo!')
+            }  
+        }
+    </script>
 </body>
 
 </html>
