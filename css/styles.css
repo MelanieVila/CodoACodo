@@ -48,7 +48,11 @@ h3 {
     font-size: 1.8rem;
 }
 
-h1, h2, h3 {
+h4 {
+    font-size: 1.4rem;
+}
+
+h1, h2, h3, h4 {
     text-align: center;
     margin-top: 0;
 }
@@ -290,13 +294,13 @@ span {
     }
 }
 
-.left {
-    text-align: left;
+.justify {
+    text-align: justify;
 }
 
 .iconotorneo {
-    height: 15rem;
-    width: 15rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
 }
 
