@@ -127,28 +127,28 @@ h1, h2, h3, h4 {
 /* BARRA DE NAVEGACIÓN */
 .nav-bg {
     background-color: var(--secundario);
-    position:sticky;
+    position:fixed;
     justify-content:space-between;
     width:100%;
 }
 
 .nav-agua {
     background-color: var(--navagua);
-    position:sticky;
+    position:fixed;
     justify-content:space-between;
     width:100%;
 }
 
 .nav-fuego {
     background-color: var(--navfuego);
-    position:sticky;
+    position:fixed;
     justify-content:space-between;
     width:100%;
 }
 
 .nav-planta {
     background-color: var(--navplanta);
-    position:sticky;
+    position:fixed;
     justify-content:space-between;
     width:100%;
 }
