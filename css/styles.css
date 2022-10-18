@@ -45,7 +45,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
 h4 {
@@ -155,8 +155,10 @@ h1, h2, h3, h4 {
 }
 
 .navegacion a {
+    width:100%;
     color: var(--blanco);
     text-decoration: none;
+    text-align: center;
     font-size: 2rem;
     font-weight: 500;
     padding: 1rem;
@@ -280,6 +282,10 @@ span {
     margin: 1rem auto;
 }
 
+.descripciontorneo h3{
+    font-size: ;
+}
+
 @media (min-width: 768px) {
     .descripciontorneoright {
         display: grid;
@@ -333,6 +339,29 @@ span {
     align-items: center;
 }
 
+.footer a{
+    text-decoration: none;
+    padding: auto;
+    align-items: center;
+}
+
+.footer a:visited{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+.footer h3{
+    margin:0;
+    font-weight: bold;
+
+}
+
+.footer p{
+    margin:0;
+    padding:1rem;
+}
+
 @media (min-width: 480px) {
     .footer {
         flex-direction: row;
@@ -356,10 +385,12 @@ span {
 }
 
 .icono {
+    margin:1rem;
     height: 2rem;
     width: 2rem;
     background-color: var(--oscuro);
     border-radius: 50%;
+    align-items: center;
 }
 
 /* FORMULARIO */
@@ -417,4 +448,9 @@ span {
     border: none;
     padding: 1.5rem;
     border-radius: .8rem;
+}
+
+.input-camporadio{
+    padding: 1.5rem;
+    margin: .8rem; 
 }
