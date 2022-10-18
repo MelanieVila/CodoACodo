@@ -13,6 +13,7 @@
 
 /* GLOBALES */
 html {
+    height: 100%;
     font-size: 62.5%;
     box-sizing: border-box;
 }
@@ -22,13 +23,21 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-size: 16px; /* 1 rem = 10px */
     font-family: 'Raleway', sans-serif;
+    min-height: 100%;
+    background-image: url(/img/FondoBlanco.png);
+}
+
+footer {
+    margin-top: auto;
 }
 
 h1 {
     font-size: 3.8rem;
-    margin-bottom: 0;
+    margin-bottom: 15rem;
 }
 
 h2 {
@@ -37,11 +46,11 @@ h2 {
 
 h3 {
     font-size: 1.8rem;
-    margin-top: 0;
 }
 
 h1, h2, h3 {
     text-align: center;
+    margin-top: 0;
 }
 
 .contenedor {
@@ -154,6 +163,17 @@ h1, h2, h3 {
     color: var(--oscuro);
 }
 
+.logo-principal {
+    height: 25rem;
+    width: 25rem;
+    margin-left: 43%;
+    margin-top: 100px;
+}
+
+.titulo-torneo {
+    z-index: .1rem;
+}
+
 /* STARTERS */
 @media (min-width: 675px) {
     .starters {
@@ -189,6 +209,13 @@ h1, h2, h3 {
 }
 
 /* PÁGINAS DE TIPOS */
+#carouselExampleControls {
+    height: 20rem;
+    width: 70rem;
+    max-width: 100rem;
+    margin: 4rem auto;
+}
+
 span {
     font-weight: 500;
 }
@@ -229,7 +256,7 @@ span {
     background: linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
 }
 
-.galeria {
+/* .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -239,16 +266,14 @@ span {
 
 .galeria img {
     width: 40%;
-}
+} */
 
 /* TORNEO */
 .descripciontorneo {
-    max-width: 85rem;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    padding: 10px;
+    width: 70rem;
+    margin: 1rem auto;
 }
 
 @media (min-width: 768px) {
@@ -273,6 +298,27 @@ span {
     height: 15rem;
     width: 15rem;
     border-radius: 50%;
+}
+
+.tablapremios {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem 1rem;
+    justify-content: space-between;
+}
+
+.tablapremios img {
+    margin: 0 auto;
+}
+
+.premio1 {
+    height: 20rem;
+    width: 30rem;
+}
+
+.premio2 {
+    height: 20rem;
+    width: 20rem;
 }
 
 /* FOOTER */
@@ -316,7 +362,7 @@ span {
 .formulario {
     background-color: var(--claro);
     width: min(60rem, 100%);
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 2rem;
     border-radius: 1rem;
 }
