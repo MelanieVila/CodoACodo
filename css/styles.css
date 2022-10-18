@@ -127,18 +127,30 @@ h1, h2, h3, h4 {
 /* BARRA DE NAVEGACIÓN */
 .nav-bg {
     background-color: var(--secundario);
+    position:fixed;
+    justify-content:space-between;
+    width:100%;
 }
 
 .nav-agua {
     background-color: var(--navagua);
+    position:fixed;
+    justify-content:space-between;
+    width:100%;
 }
 
 .nav-fuego {
     background-color: var(--navfuego);
+    position:fixed;
+    justify-content:space-between;
+    width:100%;
 }
 
 .nav-planta {
     background-color: var(--navplanta);
+    position:fixed;
+    justify-content:space-between;
+    width:100%;
 }
 
 .navegacion {
@@ -282,10 +294,6 @@ span {
     margin: 1rem auto;
 }
 
-.descripciontorneo h3{
-    font-size: ;
-}
-
 @media (min-width: 768px) {
     .descripciontorneoright {
         display: grid;
@@ -354,7 +362,7 @@ span {
 .footer h3{
     margin:0;
     font-weight: bold;
-
+    
 }
 
 .footer p{
