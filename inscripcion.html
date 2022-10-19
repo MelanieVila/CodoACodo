@@ -31,14 +31,36 @@
         <fieldset>
             <legend>¡Reservá tu lugar!</legend>
             <div class="contenedor-campos">
-                <div class="campo"><label>Nombre y Apellido</label>
-                <input class="input-campo" id="nombreyapellido" type="text" name="nombreyapellido" placeholder="Nombre y Apellido" required></div>
 
-                <div class="campo"><label>DNI</label>
-                <input class="input-campo" id="DNI" type="number" name="DNI" placeholder="DNI" required></div>
+                <!-- Nombre y Apellido -->
+                <div class="campo formulario__grupo" id="grupo__usuario">
+                    <label for="nombreyapellido" class="formulario__label">Nombre y Apellido</label>
+                    <div class="formulario__grupo-input">
+                        <input class="input-campo formulario__input" id="nombreyapellido" type="text" name="nombreyapellido" placeholder="Nombre y Apellido">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Solo puede contener letras y espacios, pueden llevar acentos.</p>
+                </div>
 
-                <div class="campo"><label>Correo electrónico</label>
-                <input class="input-campo" id="email" type="email" name="email" placeholder="Correo electrónico" required></div>
+                <!-- DNI -->
+                <div class="campo formulario__grupo" id="grupo__dni">
+                    <label for="dni" class="formulario__label">DNI</label>
+                    <div class="formulario__grupo-input">
+                        <input class="input-campo formulario__input" id="dni" type="number" name="dni" placeholder="DNI">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El DNI tiene que ser de 7 a 9 dígitos y solo puede contener números.</p>
+                </div>
+
+                <!-- Correo Electrónico -->
+                <div class="campo formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input class="input-campo formulario__input" id="correo" type="email" name="correo" placeholder="Correo Electrónico">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
+                </div>
 
                 <div class="campo"><label>Turno</label>
                 <input class="input-camporadio" id="turno" type="radio" name="turno" value="am" required> Mañana</br>
@@ -67,7 +89,7 @@
         </div>
     </footer>
     
-    <script>
+    <!-- <script>
         const $form = document.querySelector ('#form')
 
         $form.addEventListener('submit', handleSubmit)
@@ -87,7 +109,8 @@
                 alert ('¡Gracias por inscribirte al Poketorneo!')
             }  
         }
-    </script>
+    </script> -->
+    <script src="js/formulario.js"></script>
 </body>
 
 </html>

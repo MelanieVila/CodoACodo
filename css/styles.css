@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
 
 .descripcion {
     max-width: 85rem;
-    margin: 2rem auto;
+    margin: 4rem auto 2rem auto;
 }
 
 .descripcion p {
@@ -127,30 +127,30 @@ h1, h2, h3, h4 {
 /* BARRA DE NAVEGACIÓN */
 .nav-bg {
     background-color: var(--secundario);
-    position:fixed;
-    justify-content:space-between;
-    width:100%;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav-agua {
     background-color: var(--navagua);
-    position:fixed;
-    justify-content:space-between;
-    width:100%;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav-fuego {
     background-color: var(--navfuego);
-    position:fixed;
-    justify-content:space-between;
-    width:100%;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav-planta {
     background-color: var(--navplanta);
-    position:fixed;
-    justify-content:space-between;
-    width:100%;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .navegacion {
@@ -254,7 +254,7 @@ span {
 
 .descripcionagua {
     max-width: 85rem;
-    margin: 2rem auto;
+    margin: 8rem auto 1rem auto;
     background: rgb(18,122,189);
     background: -moz-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -263,7 +263,7 @@ span {
 
 .descripcionfuego {
     max-width: 85rem;
-    margin: 2rem auto;
+    margin: 8rem auto 1rem auto;
     background: rgb(185,23,23);
     background: -moz-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -272,7 +272,7 @@ span {
 
 .descripcionplanta {
     max-width: 85rem;
-    margin: 2rem auto;
+    margin: 8rem auto 1rem auto;
     background: rgb(3,168,5);
     background: -moz-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -296,9 +296,15 @@ span {
     display: grid;
     padding: 10px;
     width: 70rem;
-    margin: 1rem auto;
+    margin: 8rem auto -3rem auto;
 }
 
+.formulariotorneo {
+    display: grid;
+    padding: 10px;
+    width: 70rem;
+    margin: 8rem auto 5rem auto;
+}
 
 @media (min-width: 768px) {
     .descripciontorneoright {
@@ -410,7 +416,7 @@ span {
 .formulario {
     background-color: var(--claro);
     width: min(60rem, 100%);
-    margin: 2rem auto;
+    margin: 8rem auto 4rem auto;
     padding: 2rem;
     border-radius: 1rem;
 }
