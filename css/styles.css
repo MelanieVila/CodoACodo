@@ -606,3 +606,80 @@ span {
 		width: 100%;
 	}
 }
+
+/* POKEDEX*/
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo-pokedex{
+    padding: auto;
+    margin-top: 8%;
+    margin-bottom: 0%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 6%;
+    margin-bottom: 8%;
+    background-color: #EFF1F3;
+    border: 1px solid black;
+    position: static;
+}
+
+.poke-card::before {
+    content: '';
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+    position: static;
+
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+    background-color: #fff;
+}
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+}
