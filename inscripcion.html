@@ -27,13 +27,15 @@
     </header>
 
     <section>
-        <form id="form" class="formulario" action="https://formspree.io/f/xeqdlgzw" method="POST">
+        <!-- <form id="form" class="formulario" action="https://formspree.io/f/xeqdlgzw" method="POST"> -->
+
+        <form action="" class="formulario" id="formulario">
         <fieldset>
             <legend>¡Reservá tu lugar!</legend>
             <div class="contenedor-campos">
 
                 <!-- Nombre y Apellido -->
-                <div class="campo formulario__grupo" id="grupo__usuario">
+                <div class="campo formulario__grupo" id="grupo__nombreyapellido">
                     <label for="nombreyapellido" class="formulario__label">Nombre y Apellido</label>
                     <div class="formulario__grupo-input">
                         <input class="input-campo formulario__input" id="nombreyapellido" type="text" name="nombreyapellido" placeholder="Nombre y Apellido">
@@ -62,19 +64,31 @@
                     <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
                 </div>
 
+                <!-- Turno -->
                 <div class="campo"><label>Turno</label>
                 <input class="input-camporadio" id="turno" type="radio" name="turno" value="am" required> Mañana</br>
                 <input class="input-camporadio" id="turno" type="radio" name="turno" value="pm"> Tarde</div>
 
+                <!-- Mazo -->
                 <div class="campo"><label>Tipo de mazo que llevaré</label>
                 <input class="input-camporadio" id="mazo" type="radio" name="mazo" value="planta" required> Planta</br>
                 <input class="input-camporadio" id="mazo" type="radio" name="mazo" value="fuego"> Fuego</br>
                 <input class="input-camporadio" id="mazo" type="radio" name="mazo" value="agua"> Agua</div>
 
+                <!-- Comentarios -->
                 <div class="campo"><label>Comentarios (opcional)</label>
                 <textarea class="input-campo"></textarea></div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.</p>
+                </div>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Gracias por inscribirte al Poketorneo!</p>
+                </div>
+
             </div>
-            <div class="alinear-boton"><input class="boton" type="submit" value="Enviar"></div>
         </fieldset>
         </form>
     </section>
