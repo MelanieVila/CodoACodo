@@ -1,92 +1,92 @@
 {
     "tipofuego": [
         {
-            "id": 19,
+            "id": 004,
             "nombre": "Charmander",
             "img": "img/004Charmander.png"
         },
         {
-            "id": 20,
+            "id": 005,
             "nombre": "Charmeleon",
             "img": "img/005Charmeleon.png"
         },
         {
-            "id": 21,
+            "id": 006,
             "nombre": "Charizard",
             "img": "img/006Charizard.png"
         },
         {
-            "id": 22,
+            "id": 155,
             "nombre": "Cyndaquil",
             "img": "img/155Cyndaquil.png"
         },
         {
-            "id": 23,
+            "id": 156,
             "nombre": "Quilava",
             "img": "img/156Quilava.png"
         },
         {
-            "id": 24,
+            "id": 157,
             "nombre": "Typhlosion",
             "img": "img/157Typhlosion.png"
         },
         {
-            "id": 25,
+            "id": 255,
             "nombre": "Torchic",
             "img": "img/255Torchic.png"
         },
         {
-            "id": 26,
+            "id": 256,
             "nombre": "Combusken",
             "img": "img/256Combusken.png"
         },
         {
-            "id": 27,
+            "id": 257,
             "nombre": "Blaziken",
             "img": "img/257Blaziken.png"
         },
         {
-            "id": 28,
+            "id": 390,
             "nombre": "Chimchar",
             "img": "img/390Chimchar.png"
         },
         {
-            "id": 29,
+            "id": 391,
             "nombre": "Monferno",
             "img": "img/391Monferno.png"
         },
         {
-            "id": 30,
+            "id": 392,
             "nombre": "Infernape",
             "img": "img/392Infernape.png"
         },
         {
-            "id": 31,
+            "id": 498,
             "nombre": "Tepig",
             "img": "img/498Tepig.png"
         },
         {
-            "id": 32,
+            "id": 499,
             "nombre": "Pignite",
             "img": "img/499Pignite.png"
         },
         {
-            "id": 33,
+            "id": 500,
             "nombre": "Emboar",
-            "img": "img/590Emboar.png"
+            "img": "img/500Emboar.png"
         },
         {
-            "id": 34,
+            "id": 653,
             "nombre": "Fennekin",
             "img": "img/653Fennekin.png"
         },
         {
-            "id": 35,
+            "id": 654,
             "nombre": "Braixen",
             "img": "img/654Braixen.png"
         },
         {
-            "id": 36,
+            "id": 655,
             "nombre": "Delphox",
             "img": "img/655Delphox.png"
         }

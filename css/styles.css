@@ -279,17 +279,21 @@ span {
     background: linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
 }
 
-/* .galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 2rem;
-    cursor: pointer;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.galeria img {
-    width: 40%;
-} */
+.tarjeta {
+    border: 1px solid rgb(167, 167, 165);
+    margin: 10px;
+    border-radius: 2%;
+}
+
+.cuerpo {
+    padding: 10px;
+}
 
 /* TORNEO */
 .descripciontorneo {
