@@ -1,21 +1,21 @@
-let url = "../js/tipoagua.json"
+let url = "../js/tipoplanta.json"
 let datos = [];
 
 fetch(url)
     .then(response => response.json())
     .then(data => {
         console.log(data)
-        datos = data.tipoagua
+        datos = data.tipoplanta
         console.log(datos)
 
         let cad = `<div class="container"></div>`
 
-        for (tipoagua of datos) {
+        for (tipoplanta of datos) {
             cad += `<div class="tarjeta">
-            <img src="${tipoagua.img}" alt="${tipoagua.nombre}">
+            <img src="${tipoplanta.img}" alt="${tipoplanta.nombre}">
             <div class="cuerpo">
-                <h4>${tipoagua.numero} - ${tipoagua.nombre}</h4>
-                <p>${tipoagua.region}</p>
+                <h4>${tipoplanta.numero} - ${tipoplanta.nombre}</h4>
+                <p>${tipoplanta.region}</p>
             </div>
         </div>`
         }
