@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
 
 .descripcion {
     max-width: 85rem;
-    margin: 4rem auto 2rem auto;
+    margin: 2rem auto;
 }
 
 .descripcion p {
@@ -127,30 +127,30 @@ h1, h2, h3, h4 {
 /* BARRA DE NAVEGACIÓN */
 .nav-bg {
     background-color: var(--secundario);
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
+    position:fixed;
+    justify-content:space-between;
+    width:100%;
 }
 
 .nav-agua {
     background-color: var(--navagua);
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
+    position:fixed;
+    justify-content:space-between;
+    width:100%;
 }
 
 .nav-fuego {
     background-color: var(--navfuego);
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
+    position:fixed;
+    justify-content:space-between;
+    width:100%;
 }
 
 .nav-planta {
     background-color: var(--navplanta);
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
+    position:fixed;
+    justify-content:space-between;
+    width:100%;
 }
 
 .navegacion {
@@ -232,6 +232,7 @@ h1, h2, h3, h4 {
     width: 70rem;
     max-width: 100rem;
     margin: 4rem auto;
+   
 }
 
 span {
@@ -254,7 +255,9 @@ span {
 
 .descripcionagua {
     max-width: 85rem;
-    margin: 8rem auto 1rem auto;
+    margin: 2rem auto;
+    margin-top: 4%;
+
     background: rgb(18,122,189);
     background: -moz-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -263,7 +266,9 @@ span {
 
 .descripcionfuego {
     max-width: 85rem;
-    margin: 8rem auto 1rem auto;
+    margin: 2rem auto;
+    margin-top: 4%;
+
     background: rgb(185,23,23);
     background: -moz-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -272,7 +277,8 @@ span {
 
 .descripcionplanta {
     max-width: 85rem;
-    margin: 8rem auto 1rem auto;
+    margin: 2rem auto;
+    margin-top: 4%;
     background: rgb(3,168,5);
     background: -moz-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -296,15 +302,10 @@ span {
     display: grid;
     padding: 10px;
     width: 70rem;
-    margin: 8rem auto -3rem auto;
+    margin: 1rem auto;
+    margin-top: 4%;
 }
 
-.formulariotorneo {
-    display: grid;
-    padding: 10px;
-    width: 70rem;
-    margin: 8rem auto 5rem auto;
-}
 
 @media (min-width: 768px) {
     .descripciontorneoright {
@@ -416,7 +417,7 @@ span {
 .formulario {
     background-color: var(--claro);
     width: min(60rem, 100%);
-    margin: 8rem auto 4rem auto;
+    margin: 2rem auto;
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -472,4 +473,78 @@ span {
 .input-camporadio{
     padding: 1.5rem;
     margin: .8rem; 
+}
+
+
+
+
+/* POKEDEX*/
+
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+.titulo-pokedex{
+    padding: auto;
+    margin-top: 8%;
+    margin-bottom: 0%;
+}
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 6%;
+    margin-bottom: 8%;
+    background-color: #FFF;
+    border: 1px solid black;
+    position: static;
+}
+
+.poke-card::before {
+    content: '';
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+    position: static;
+
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+}
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
 }
