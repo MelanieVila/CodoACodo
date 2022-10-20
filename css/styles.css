@@ -230,8 +230,8 @@ h1, h2, h3, h4 {
 #carouselExampleControls {
     height: 20rem;
     width: 70rem;
-    max-width: 100rem;
-    margin: 4rem auto;
+    max-width: 30rem;
+    margin: 2rem auto;
 }
 
 span {
