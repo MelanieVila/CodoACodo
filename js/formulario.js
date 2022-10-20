@@ -17,18 +17,18 @@ const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "nombreyapellido":
 			validarCampo(expresiones.nombreyapellido, e.target, 'nombreyapellido');
-		break;
-        case "dni":
+			break;
+		case "dni":
 			validarCampo(expresiones.dni, e.target, 'dni');
-		break;
+			break;
 		case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
-		break;
+			break;
 	}
 }
 
 const validarCampo = (expresion, input, campo) => {
-	if(expresion.test(input.value)){
+	if (expresion.test(input.value)) {
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
@@ -56,7 +56,7 @@ formulario.addEventListener('submit', (e) => {
 	const turno = document.getElementById('turno');
 	const mazo = document.getElementById('mazo');
 
-	if(campos.nombreyapellido && campos.dni && campos.correo){
+	if (campos.nombreyapellido && campos.dni && campos.correo) {
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
