@@ -28,7 +28,7 @@ body {
     font-size: 1.6rem; /* 1 rem = 10px */
     font-family: 'Raleway', sans-serif;
     min-height: 100%;
-    background-image: url(/img/FondoBlanco.png);
+    background-image: url(../img/FondoBlanco.png);
 }
 
 footer {
@@ -103,7 +103,7 @@ h1, h2, h3, h4 {
 
 /* PORTADA */
 .portada {
-    background-image: linear-gradient(to right, rgba(107, 17, 203, 0.30) 0%, rgba(37, 116, 252, 0.30) 100%), url(/img/Portada.png);  
+    background-image: linear-gradient(to right, rgba(107, 17, 203, 0.30) 0%, rgba(37, 116, 252, 0.30) 100%), url(../img/Portada.png);  
     width: 100%;
     height: 450px;
     background-size: cover;
@@ -127,28 +127,28 @@ h1, h2, h3, h4 {
 /* BARRA DE NAVEGACIÓN */
 .nav-bg {
     background-color: var(--secundario);
-    position: fixed;
+    /* position: fixed; */
     justify-content: space-between;
     width: 100%;
 }
 
 .nav-agua {
     background-color: var(--navagua);
-    position: fixed;
+    /* position: fixed; */
     justify-content: space-between;
     width: 100%;
 }
 
 .nav-fuego {
     background-color: var(--navfuego);
-    position: fixed;
+    /* position: fixed; */
     justify-content: space-between;
     width: 100%;
 }
 
 .nav-planta {
     background-color: var(--navplanta);
-    position: fixed;
+    /* position: fixed; */
     justify-content: space-between;
     width: 100%;
 }
@@ -254,7 +254,7 @@ span {
 
 .descripcionagua {
     max-width: 85rem;
-    margin: 8rem auto 1rem auto;
+    margin: 2rem auto;
     background: rgb(18,122,189);
     background: -moz-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -263,7 +263,7 @@ span {
 
 .descripcionfuego {
     max-width: 85rem;
-    margin: 8rem auto 1rem auto;
+    margin: 2rem auto;
     background: rgb(185,23,23);
     background: -moz-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -272,7 +272,7 @@ span {
 
 .descripcionplanta {
     max-width: 85rem;
-    margin: 8rem auto 1rem auto;
+    margin: 2rem auto;
     background: rgb(3,168,5);
     background: -moz-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -296,14 +296,14 @@ span {
     display: grid;
     padding: 10px;
     width: 70rem;
-    margin: 8rem auto -3rem auto;
+    margin: 2rem auto;
 }
 
 .formulariotorneo {
     display: grid;
     padding: 10px;
     width: 70rem;
-    margin: 8rem auto 5rem auto;
+    margin: 2rem auto;
 }
 
 @media (min-width: 768px) {
@@ -319,7 +319,6 @@ span {
         grid-template-columns: 75% 25%;
     }
 }
-
 
 .iconotorneo {
     height: 5rem;
@@ -356,29 +355,27 @@ span {
     align-items: center;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
     padding: auto;
     align-items: center;
-    
 }
 
-.footer a:visited{
+.footer a:visited {
     color: black;
     text-decoration: none;
     align-items: center;
 }
 
-.footer h3{
-    margin:0;
+.footer h3 {
+    margin: 0;
     font-weight: bold;
     font-size: 2rem;
-    
 }
 
-.footer p{
-    margin:0;
-    padding:1rem;
+.footer p {
+    margin: 0;
+    padding: 1rem;
 }
 
 @media (min-width: 480px) {
@@ -404,7 +401,7 @@ span {
 }
 
 .icono {
-    margin:1rem;
+    margin: 1rem;
     height: 2rem;
     width: 2rem;
     background-color: var(--oscuro);
@@ -416,7 +413,7 @@ span {
 .formulario {
     background-color: var(--claro);
     width: min(60rem, 100%);
-    margin: 8rem auto 4rem auto;
+    margin: 2rem auto;
     padding: 2rem;
     border-radius: 1rem;
 }
