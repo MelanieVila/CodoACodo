@@ -68,11 +68,3 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
-
-desplazarArriba.addEventListener("click", () => {
-	window.scrollTo({
-	  top: 0,
-	  left: 0,
-	  behavior: "smooth",
-	});
-  });
