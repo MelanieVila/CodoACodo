@@ -8,7 +8,7 @@ fetch(url)
         datos = data.tipoplanta
         console.log(datos)
 
-        let cad = `<div class="container"></div>`
+        let cad = `<div class="container">`
 
         for (tipoplanta of datos) {
             cad += `<div class="tarjeta">
@@ -19,6 +19,8 @@ fetch(url)
             </div>
         </div>`
         }
+
+        cad+=`</div>`
 
         console.log(cad)
 

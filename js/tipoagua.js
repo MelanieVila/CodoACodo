@@ -8,17 +8,19 @@ fetch(url)
         datos = data.tipoagua
         console.log(datos)
 
-        let cad = `<div class="container"></div>`
+        let cad = `<div class="container">`
 
-        for (tipoagua of datos) {
+        for (tipoplanta of datos) {
             cad += `<div class="tarjeta">
-            <img src="${tipoagua.img}" alt="${tipoagua.nombre}">
+            <img src="${tipoplanta.img}" alt="${tipoplanta.nombre}">
             <div class="cuerpo">
-                <h4>${tipoagua.numero} - ${tipoagua.nombre}</h4>
-                <p>${tipoagua.region}</p>
+                <h4>${tipoplanta.numero} - ${tipoplanta.nombre}</h4>
+                <p>${tipoplanta.region}</p>
             </div>
         </div>`
         }
+
+        cad+=`</div>`
 
         console.log(cad)
 

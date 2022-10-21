@@ -3,109 +3,109 @@
         {
             "numero": "004",
             "nombre": "Charmander",
-            "img": "img/004Charmander.png",
+            "img": "../img/004Charmander.png",
             "region": "Kanto"
         },
         {
             "numero": "005",
             "nombre": "Charmeleon",
-            "img": "img/005Charmeleon.png",
+            "img": "../img/005Charmeleon.png",
             "region": "Kanto"
         },
         {
             "numero": "006",
             "nombre": "Charizard",
-            "img": "img/006Charizard.png",
+            "img": "../img/006Charizard.png",
             "region": "Kanto"
         },
         {
             "numero": "155",
             "nombre": "Cyndaquil",
-            "img": "img/155Cyndaquil.png",
+            "img": "../img/155Cyndaquil.png",
             "region": "Johto"
         },
         {
             "numero": "156",
             "nombre": "Quilava",
-            "img": "img/156Quilava.png",
+            "img": "../img/156Quilava.png",
             "region": "Johto"
         },
         {
             "numero": "157",
             "nombre": "Typhlosion",
-            "img": "img/157Typhlosion.png",
+            "img": "../img/157Typhlosion.png",
             "region": "Johto"
         },
         {
             "numero": "255",
             "nombre": "Torchic",
-            "img": "img/255Torchic.png",
+            "img": "../img/255Torchic.png",
             "region": "Hoenn"
         },
         {
             "numero": "256",
             "nombre": "Combusken",
-            "img": "img/256Combusken.png",
+            "img": "../img/256Combusken.png",
             "region": "Hoenn"
         },
         {
             "numero": "257",
             "nombre": "Blaziken",
-            "img": "img/257Blaziken.png",
+            "img": "../img/257Blaziken.png",
             "region": "Hoenn"
         },
         {
             "numero": "390",
             "nombre": "Chimchar",
-            "img": "img/390Chimchar.png",
+            "img": "../img/390Chimchar.png",
             "region": "Sinnoh"
         },
         {
             "numero": "391",
             "nombre": "Monferno",
-            "img": "img/391Monferno.png",
+            "img": "../img/391Monferno.png",
             "region": "Sinnoh"
         },
         {
             "numero": "392",
             "nombre": "Infernape",
-            "img": "img/392Infernape.png",
+            "img": "../img/392Infernape.png",
             "region": "Sinnoh"
         },
         {
             "numero": "498",
             "nombre": "Tepig",
-            "img": "img/498Tepig.png",
+            "img": "../img/498Tepig.png",
             "region": "Teselia"
         },
         {
             "numero": "499",
             "nombre": "Pignite",
-            "img": "img/499Pignite.png",
+            "img": "../img/499Pignite.png",
             "region": "Teselia"
         },
         {
             "numero": "500",
             "nombre": "Emboar",
-            "img": "img/500Emboar.png",
+            "img": "../img/500Emboar.png",
             "region": "Teselia"
         },
         {
             "numero": "653",
             "nombre": "Fennekin",
-            "img": "img/653Fennekin.png",
+            "img": "../img/653Fennekin.png",
             "region": "Kalos"
         },
         {
             "numero": "654",
             "nombre": "Braixen",
-            "img": "img/654Braixen.png",
+            "img": "../img/654Braixen.png",
             "region": "Kalos"
         },
         {
             "numero": "655",
             "nombre": "Delphox",
-            "img": "img/655Delphox.png",
+            "img": "../img/655Delphox.png",
             "region": "Kalos"
         }
     ]

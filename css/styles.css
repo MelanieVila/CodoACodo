@@ -280,32 +280,48 @@ span {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 1rem;
+    justify-content: space-between;
 }
 
 .tarjeta {
-    border: 1px solid rgb(167, 167, 165);
-    margin: 10px;
-    border-radius: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    /* border: .1rem solid rgb(167, 167, 165); OPCIONAL */ 
+    margin: 1rem;
+    border-radius: 5%;
+    place-items: center;
+}
+
+.tarjeta img {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.tarjeta p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cuerpo {
-    padding: 10px;
+    padding: 1rem;
 }
 
 /* TORNEO */
 .descripciontorneo {
     display: grid;
-    padding: 10px;
+    padding: 1rem;
     width: 70rem;
     margin: 2rem auto;
 }
 
 .formulariotorneo {
     display: grid;
-    padding: 10px;
+    padding: 1rem;
     width: 70rem;
     margin: 2rem auto;
 }
@@ -607,9 +623,7 @@ span {
 	}
 }
 
-/* POKEDEX*/
-
-
+/* POKEDEX */
 input {
     width: 100%;
     padding: 10px;
@@ -659,7 +673,6 @@ input {
     width: 180px;
     margin: 10px auto;
     position: static;
-
 }
 
 .poke-stats div {
