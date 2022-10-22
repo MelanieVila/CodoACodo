@@ -28,7 +28,7 @@ body {
     font-size: 1.6rem; /* 1 rem = 10px */
     font-family: 'Raleway', sans-serif;
     min-height: 100%;
-    background-image: url(/img/FondoBlanco.png);
+    background-image: url(../img/FondoBlanco.png);
 }
 
 footer {
@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
 
 .descripcion {
     max-width: 85rem;
-    margin: 2rem auto;
+    margin: 4rem auto 2rem auto;
 }
 
 .descripcion p {
@@ -103,7 +103,7 @@ h1, h2, h3, h4 {
 
 /* PORTADA */
 .portada {
-    background-image: linear-gradient(to right, rgba(107, 17, 203, 0.30) 0%, rgba(37, 116, 252, 0.30) 100%), url(/img/Portada.png);  
+    background-image: linear-gradient(to right, rgba(107, 17, 203, 0.30) 0%, rgba(37, 116, 252, 0.30) 100%), url(../img/Portada.png);  
     width: 100%;
     height: 450px;
     background-size: cover;
@@ -115,6 +115,13 @@ h1, h2, h3, h4 {
     overflow: hidden;
 }
 
+@media (max-width: 400px){
+    .portada{
+        height:350px;
+        width: 100%;
+    }
+}
+
 .contenido-portada {
     height: 100%;
     display: flex;
@@ -124,33 +131,34 @@ h1, h2, h3, h4 {
     color: var(--blanco);
 }
 
+
 /* BARRA DE NAVEGACIÓN */
 .nav-bg {
     background-color: var(--secundario);
-    position:fixed;
-    justify-content:space-between;
-    width:100%;
+    /* position: fixed; */
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav-agua {
     background-color: var(--navagua);
-    position:fixed;
-    justify-content:space-between;
-    width:100%;
+    /* position: fixed; */
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav-fuego {
     background-color: var(--navfuego);
-    position:fixed;
-    justify-content:space-between;
-    width:100%;
+    /* position: fixed; */
+    justify-content: space-between;
+    width: 100%;
 }
 
 .nav-planta {
     background-color: var(--navplanta);
-    position:fixed;
-    justify-content:space-between;
-    width:100%;
+    /* position: fixed; */
+    justify-content: space-between;
+    width: 100%;
 }
 
 .navegacion {
@@ -160,11 +168,25 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 400px) {
+    .navegacion {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 850px) {
     .navegacion {
         flex-direction: row;
     }
 }
+
+@media (min-width: 1000px) {
+    .navegacion {
+        flex-direction: row;
+    }
+}
+
+
 
 .navegacion a {
     width:100%;
@@ -187,19 +209,54 @@ h1, h2, h3, h4 {
     margin-left: 43%;
     margin-top: 100px;
 }
+/*@media (max-width: 400px){
+    .logo-principal{
+        height: 15rem;
+    width: 15rem;
+    }
+}*/
+
+@media (max-width: 400px){
+    .logo-poketorneos{
+        width: 380px;
+        }
+        
+}
+
+
 
 .titulo-torneo {
     z-index: .1rem;
 }
 
 /* STARTERS */
-@media (min-width: 675px) {
+@media (max-width: 400px) {
+    .starters {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+}
+
+@media (min-width: 850px) {
     .starters {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;
+        row-gap: 3rem;
     }
 }
+
+@media (min-width: 1000px) {
+    .starters {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+}
+
 
 .starter {
     display: flex;
@@ -230,9 +287,8 @@ h1, h2, h3, h4 {
 #carouselExampleControls {
     height: 20rem;
     width: 70rem;
-    max-width: 100rem;
-    margin: 4rem auto;
-   
+    max-width: 30rem;
+    margin: 2rem auto;
 }
 
 span {
@@ -256,8 +312,6 @@ span {
 .descripcionagua {
     max-width: 85rem;
     margin: 2rem auto;
-    margin-top: 4%;
-
     background: rgb(18,122,189);
     background: -moz-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -267,8 +321,6 @@ span {
 .descripcionfuego {
     max-width: 85rem;
     margin: 2rem auto;
-    margin-top: 4%;
-
     background: rgb(185,23,23);
     background: -moz-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -278,34 +330,133 @@ span {
 .descripcionplanta {
     max-width: 85rem;
     margin: 2rem auto;
-    margin-top: 4%;
     background: rgb(3,168,5);
     background: -moz-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
     background: linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
 }
 
-/* .galeria {
+.container {
+    width: 70rem;
     display: grid;
+    margin: 1rem auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 2rem;
-    cursor: pointer;
+    gap: 1rem 1rem;
+    justify-content: space-between;
 }
 
-.galeria img {
-    width: 40%;
-} */
+.tarjeta {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 5%;
+    border: .1rem solid rgb(167, 167, 165); 
+    margin: 1rem;
+    border-radius: 5%;
+    place-items: center; 
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 3rem;
+        row-gap: 0rem;
+        width:100%;
+        justify-items: space-between;
+    }
+
+}
+
+.tarjeta img {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.tarjeta h4{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.tarjeta h2{
+    font-weight: lighter;
+    font-size: 1.4rem;
+}
+
+.tarjeta p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo {
+    padding: 1rem;
+}
+
+.desplazarse-hacia-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+
+  .desplazarse-hacia-arriba img {
+    height: 4rem;
+  }
+  
+  .flecha-arriba {
+    width: 3rem;
+    height: 3rem;
+  }
+
 
 /* TORNEO */
 .descripciontorneo {
     display: grid;
-    padding: 10px;
+    padding: 1rem;
     width: 70rem;
-    margin: 1rem auto;
-    margin-top: 4%;
+    margin: 2rem auto;
+   /**/ 
+    background: rgb(126,172,168);
+    background: -moz-linear-gradient(349deg, rgba(126,172,168,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: -webkit-linear-gradient(349deg, rgba(126,172,168,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(349deg, rgba(126,172,168,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+}
+/**/.form-torneo-deg{
+    background: rgb(126,172,168);
+    background: -moz-linear-gradient(349deg, rgba(126,172,168,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: -webkit-linear-gradient(349deg, rgba(126,172,168,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(349deg, rgba(126,172,168,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
 }
 
+/**/
+
+@media (max-width: 400px) {
+    .descripciontorneo {
+        width: 100%;
+    }
+    .formulariotorneo {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .descripciontorneo {
+        width: 100%;
+    }
+    .formulariotorneo {
+        max-width: 100%;
+    }
+}
+
+.formulariotorneo {
+    display: grid;
+    padding: 1rem;
+    width: 70rem;
+    margin: 2rem auto;
+}
 
 @media (min-width: 768px) {
     .descripciontorneoright {
@@ -320,7 +471,6 @@ span {
         grid-template-columns: 75% 25%;
     }
 }
-
 
 .iconotorneo {
     height: 5rem;
@@ -349,7 +499,22 @@ span {
     width: 20rem;
 }
 
+@media (max-width: 650px) {
+    .tablapremios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.logos-torneo{ 
+    height: 35px;
+    width: 35px;
+}
+/**/
+
 /* FOOTER */
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -357,29 +522,27 @@ span {
     align-items: center;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
     padding: auto;
     align-items: center;
-    
 }
 
-.footer a:visited{
+.footer a {
     color: black;
     text-decoration: none;
     align-items: center;
 }
 
-.footer h3{
-    margin:0;
+.footer h3 {
+    margin: 0;
     font-weight: bold;
     font-size: 2rem;
-    
 }
 
-.footer p{
-    margin:0;
-    padding:1rem;
+.footer p {
+    margin: 0;
+    padding: 1rem;
 }
 
 @media (min-width: 480px) {
@@ -405,7 +568,7 @@ span {
 }
 
 .icono {
-    margin:1rem;
+    margin: 1rem;
     height: 2rem;
     width: 2rem;
     background-color: var(--oscuro);
@@ -472,30 +635,161 @@ span {
 
 .input-camporadio{
     padding: 1.5rem;
-    margin: .8rem; 
+    margin: .8rem;
 }
 
+/* Formulario JS */
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
 
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
 
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
 
-/* POKEDEX*/
+.formulario__input-error-activo {
+	display: block;
+}
 
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
 
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* Estilos para validación de formulario */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+
+/* POKEDEX */
 input {
     width: 100%;
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .titulo-pokedex{
     padding: auto;
     margin-top: 8%;
     margin-bottom: 0%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .poke-card {
     position: relative;
     height: fit-content;
-    font-family: monospace;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
     max-width: 300px;
     border-radius: 4px;
     color: #000;
@@ -504,7 +798,7 @@ input {
     margin: 0 auto;
     margin-top: 6%;
     margin-bottom: 8%;
-    background-color: #FFF;
+    background-color: #EFF1F3;
     border: 1px solid black;
     position: static;
 }
@@ -526,7 +820,6 @@ input {
     width: 180px;
     margin: 10px auto;
     position: static;
-
 }
 
 .poke-stats div {
@@ -535,6 +828,7 @@ input {
     align-content: space-between;
     padding: 5px;
     font-size: 18px;
+    font-weight: lighter;
 }
 
 .poke-types div {
@@ -542,6 +836,7 @@ input {
     margin: 5px;
     border-radius: 4px;
     border: 1px dashed black;
+    background-color: #fff;
 }
 
 .poke-img {

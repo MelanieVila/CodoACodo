@@ -1,94 +1,112 @@
 {
     "tipoagua": [
         {
-            "id": 1,
+            "numero": "007",
             "nombre": "Squirtle",
-            "img": "img/007Squirtle.png"
+            "img": "../img/007Squirtle.png",
+            "region": "Kanto"
         },
         {
-            "id": 2,
+            "numero": "008",
             "nombre": "Wartortle",
-            "img": "img/008Wartortle.png"
+            "img": "../img/008Wartortle.png",
+            "region": "Kanto"
         },
         {
-            "id": 3,
+            "numero": "009",
             "nombre": "Blastoise",
-            "img": "img/009Blastoise.png"
+            "img": "../img/009Blastoise.png",
+            "region": "Kanto"
         },
         {
-            "id": 4,
+            "numero": "158",
             "nombre": "Totodile",
-            "img": "img/158Totodile.png"
+            "img": "../img/158Totodile.png",
+            "region": "Johto"
         },
         {
-            "id": 5,
+            "numero": "159",
             "nombre": "Croconaw",
-            "img": "img/159Croconaw.png"
+            "img": "../img/159Croconaw.png",
+            "region": "Johto"
         },
         {
-            "id": 6,
+            "numero": "160",
             "nombre": "Feraligatr",
-            "img": "img/160Feraligatr.png"
+            "img": "../img/160Feraligatr.png",
+            "region": "Johto"
         },
         {
-            "id": 7,
+            "numero": "258",
             "nombre": "Mudkip",
-            "img": "img/258Mudkip.png"
+            "img": "../img/258Mudkip.png",
+            "region": "Hoenn"
         },
         {
-            "id": 8,
+            "numero": "259",
             "nombre": "Marshtomp",
-            "img": "img/259Marshtomp.png"
+            "img": "../img/259Marshtomp.png",
+            "region": "Hoenn"
         },
         {
-            "id": 9,
+            "numero": "260",
             "nombre": "Swampert",
-            "img": "img/260Swampert.png"
+            "img": "../img/260Swampert.png",
+            "region": "Hoenn"
         },
         {
-            "id": 10,
+            "numero": "393",
             "nombre": "Piplup",
-            "img": "img/393Piplup.png"
+            "img": "../img/393Piplup.png",
+            "region": "Sinnoh"
         },
         {
-            "id": 11,
+            "numero": "394",
             "nombre": "Prinplup",
-            "img": "img/394Prinplup.png"
+            "img": "../img/394Prinplup.png",
+            "region": "Sinnoh"
         },
         {
-            "id": 12,
+            "numero": "395",
             "nombre": "Empoleon",
-            "img": "img/395Empoleon.png"
+            "img": "../img/395Empoleon.png",
+            "region": "Sinnoh"
         },
         {
-            "id": 13,
+            "numero": "501",
             "nombre": "Oshawott",
-            "img": "img/501Oshawott.png"
+            "img": "../img/501Oshawott.png",
+            "region": "Teselia"
         },
         {
-            "id": 14,
+            "numero": "502",
             "nombre": "Dewott",
-            "img": "img/502Dewott.png"
+            "img": "../img/502Dewott.png",
+            "region": "Teselia"
         },
         {
-            "id": 15,
+            "numero": "503",
             "nombre": "Samurott",
-            "img": "img/503Samurott.png"
+            "img": "../img/503Samurott.png",
+            "region": "Teselia"
         },
         {
-            "id": 16,
+            "numero": "656",
             "nombre": "Froakie",
-            "img": "img/656Froakie.png"
+            "img": "../img/656Froakie.png",
+            "region": "Kalos"
         },
         {
-            "id": 17,
+            "numero": "657",
             "nombre": "Frogadier",
-            "img": "img/657Frogadier.png"
+            "img": "../img/657Frogadier.png",
+            "region": "Kalos"
         },
         {
-            "id": 18,
+            "numero": "658",
             "nombre": "Greninja",
-            "img": "img/658Greninja.png"
+            "img": "../img/658Greninja.png",
+            "region": "Kalos"
         }
     ]
 }

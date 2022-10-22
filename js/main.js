@@ -1,26 +1,9 @@
-const myFormEl = document.querySelector(".form-insc");
+const desplazarArriba = document.querySelector("#desplazarse-hacia-arriba");
 
-myFormEl.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const data = new FormData(event.target);
-    const value = Object.fromEntries(data.entries());
-    value.temas = data.getAll("temas");
-    console.log({ value });
+desplazarArriba.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 });
-
-/*
-function main() {
-const form = document.queryCommandValue(".form-insc");
-
-form.addEventListener("submit", function (evento){
-    evento.preventDefault();
-    const formData = evento.target;
-    console.log(formData.nombre.value);
-    console.log(formData.apellido.value);
-    console.log(formData["slect"].value);
-    console.log(formData.mensaje.value);
-});
-};
-
-main();
-*/
