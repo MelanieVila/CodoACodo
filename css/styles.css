@@ -254,11 +254,12 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-transition: all .7s ease-in-out;
 }
 
 .pokemon:hover {
     transition: all 0.5s;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.2);
 }
 
 /* PÁGINAS DE TIPOS */
@@ -379,16 +380,18 @@ span {
     right: 0.5%;
     bottom: 3%;
     cursor: pointer;
-  }
+    background-color: var(--secundario);
+    border-radius: 50%;
+}
 
-  .desplazarse-hacia-arriba img {
+.desplazarse-hacia-arriba img {
     height: 4rem;
-  }
+}
   
-  .flecha-arriba {
+.flecha-arriba {
     width: 3rem;
     height: 3rem;
-  }
+}
 
 
 /* TORNEO */
