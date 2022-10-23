@@ -349,8 +349,6 @@ span {
 .tablapremios {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 1rem 1rem;
-    justify-content: space-between;
 }
 
 .tablapremios img {
@@ -624,23 +622,20 @@ span {
 }
 
 /* POKEDEX */
-input {
+.pokedex {
     width: 100%;
     padding: 10px;
-    font-family: 'Raleway', sans-serif;
 }
 
 .titulo-pokedex{
     padding: auto;
     margin-top: 8%;
     margin-bottom: 0%;
-    font-family: 'Raleway', sans-serif;
 }
 
 .poke-card {
     position: relative;
     height: fit-content;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     text-transform: capitalize;
     max-width: 300px;
