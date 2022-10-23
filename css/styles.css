@@ -401,6 +401,8 @@ span {
     right: 0.5%;
     bottom: 3%;
     cursor: pointer;
+    background-color: var(--secundario);
+    border-radius: 50%;
   }
 
   .desplazarse-hacia-arriba img {
