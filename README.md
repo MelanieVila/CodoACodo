@@ -1,8 +1,8 @@
 # Poketorneos
 
-Proyecto grupal del programa Codo a Codo (2022)
+Proyecto grupal del programa Codo a Codo (2022).
 
-Integrantes : Vila Melanie, Russo Zamora Micaela, Funicelli Nicolás.
+Integrantes: Vila Melanie, Russo Zamora Micaela, Funicelli Nicolás.
 
 Github page: https://melanievila.github.io/Poketorneos/
 
