@@ -14,7 +14,7 @@ fetch(url)
             cad += `<div class="tarjeta">
             <img src="${tipoplanta.img}" alt="${tipoplanta.nombre}">
             <div class="cuerpo">
-                <h4>${tipoplanta.numero} - ${tipoplanta.nombre}</h4>
+                <h2>${tipoplanta.numero}</h2><h4>${tipoplanta.nombre}</h4>
                 <p>${tipoplanta.region}</p>
             </div>
         </div>`

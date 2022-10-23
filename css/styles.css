@@ -124,6 +124,7 @@ h1, h2, h3, h4 {
     color: var(--blanco);
 }
 
+
 /* BARRA DE NAVEGACIÓN */
 .nav-bg {
     background-color: var(--secundario);
@@ -160,11 +161,25 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 400px) {
+    .navegacion {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 850px) {
     .navegacion {
         flex-direction: row;
     }
 }
+
+@media (min-width: 1000px) {
+    .navegacion {
+        flex-direction: row;
+    }
+}
+
+
 
 .navegacion a {
     width:100%;
@@ -193,13 +208,33 @@ h1, h2, h3, h4 {
 }
 
 /* STARTERS */
-@media (min-width: 675px) {
+@media (max-width: 400px) {
+    .starters {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+}
+
+@media (min-width: 850px) {
     .starters {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 3rem;
+        row-gap: 3rem;
     }
 }
+
+@media (min-width: 1000px) {
+    .starters {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+    }
+}
+
 
 .starter {
     display: flex;
@@ -280,7 +315,9 @@ span {
 }
 
 .container {
+    width: 70rem;
     display: grid;
+    margin: 1rem auto;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem 1rem;
     justify-content: space-between;
@@ -290,15 +327,41 @@ span {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
-    /* border: .1rem solid rgb(167, 167, 165); OPCIONAL */ 
+    background-color: #fff;
+    border-radius: 5%;
+    border: .1rem solid rgb(167, 167, 165); 
     margin: 1rem;
     border-radius: 5%;
     place-items: center;
+       
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 3rem;
+        row-gap: 0rem;
+        width:100%;
+        justify-items: space-between;
+    }
+
 }
 
 .tarjeta img {
     width: 8rem;
     margin: 0 auto;
+}
+
+.tarjeta h4{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.tarjeta h2{
+    font-weight: lighter;
+    font-size: 1.4rem;
 }
 
 .tarjeta p {
@@ -311,12 +374,48 @@ span {
     padding: 1rem;
 }
 
+.desplazarse-hacia-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+
+  .desplazarse-hacia-arriba img {
+    height: 4rem;
+  }
+  
+  .flecha-arriba {
+    width: 3rem;
+    height: 3rem;
+  }
+
+
 /* TORNEO */
 .descripciontorneo {
     display: grid;
     padding: 1rem;
     width: 70rem;
     margin: 2rem auto;
+}
+
+
+@media (max-width: 400px) {
+    .descripciontorneo {
+        width: 100%;
+    }
+    .formulariotorneo {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .descripciontorneo {
+        width: 100%;
+    }
+    .formulariotorneo {
+        max-width: 100%;
+    }
 }
 
 .formulariotorneo {
@@ -363,6 +462,14 @@ span {
 .premio2 {
     height: 20rem;
     width: 20rem;
+}
+
+@media (max-width: 650px) {
+    .tablapremios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* FOOTER */
@@ -486,7 +593,7 @@ span {
 
 .input-camporadio{
     padding: 1.5rem;
-    margin: .8rem; 
+    margin: .8rem;
 }
 
 /* Formulario JS */
