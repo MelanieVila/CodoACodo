@@ -276,11 +276,12 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-transition: all .7s ease-in-out;
 }
 
 .pokemon:hover {
     transition: all 0.5s;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.2);
 }
 
 /* PÁGINAS DE TIPOS */
@@ -343,6 +344,7 @@ span {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem 1rem;
     justify-content: space-between;
+<<<<<<< HEAD
 }
 
 .tarjeta {
@@ -411,6 +413,79 @@ span {
     height: 3rem;
   }
 
+=======
+}
+
+.tarjeta {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 5%;
+    border: .1rem solid rgb(167, 167, 165); 
+    margin: 1rem;
+    border-radius: 5%;
+    place-items: center;
+       
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 3rem;
+        row-gap: 0rem;
+        width:100%;
+        justify-items: space-between;
+    }
+
+}
+
+.tarjeta img {
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.tarjeta h4{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.tarjeta h2{
+    font-weight: lighter;
+    font-size: 1.4rem;
+}
+
+.tarjeta p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo {
+    padding: 1rem;
+}
+
+.desplazarse-hacia-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+    background-color: var(--secundario);
+    border-radius: 50%;
+}
+
+.desplazarse-hacia-arriba img {
+    height: 4rem;
+}
+  
+.flecha-arriba {
+    width: 3rem;
+    height: 3rem;
+}
+
+>>>>>>> f34db58efcfe95b76d0b31dacd777466438c386f
 
 /* TORNEO */
 .descripciontorneo {
@@ -418,6 +493,7 @@ span {
     padding: 1rem;
     width: 70rem;
     margin: 2rem auto;
+<<<<<<< HEAD
    /**/ 
     background: rgb(126,172,168);
     background: -moz-linear-gradient(349deg, rgba(126,172,168,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
@@ -432,6 +508,10 @@ span {
 }
 
 /**/
+=======
+}
+
+>>>>>>> f34db58efcfe95b76d0b31dacd777466438c386f
 
 @media (max-width: 400px) {
     .descripciontorneo {
@@ -481,8 +561,6 @@ span {
 .tablapremios {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 1rem 1rem;
-    justify-content: space-between;
 }
 
 .tablapremios img {
@@ -507,12 +585,15 @@ span {
     }
 }
 
+<<<<<<< HEAD
 .logos-torneo{ 
     height: 35px;
     width: 35px;
 }
 /**/
 
+=======
+>>>>>>> f34db58efcfe95b76d0b31dacd777466438c386f
 /* FOOTER */
 
 .footer {
@@ -771,23 +852,35 @@ span {
 }
 
 /* POKEDEX */
+<<<<<<< HEAD
 input {
     width: 100%;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
+=======
+.pokedex {
+    width: 100%;
+    padding: 10px;
+>>>>>>> f34db58efcfe95b76d0b31dacd777466438c386f
 }
 
 .titulo-pokedex{
     padding: auto;
     margin-top: 8%;
     margin-bottom: 0%;
+<<<<<<< HEAD
     font-family: 'Raleway', sans-serif;
+=======
+>>>>>>> f34db58efcfe95b76d0b31dacd777466438c386f
 }
 
 .poke-card {
     position: relative;
     height: fit-content;
+<<<<<<< HEAD
     font-family: 'Raleway', sans-serif;
+=======
+>>>>>>> f34db58efcfe95b76d0b31dacd777466438c386f
     font-weight: bold;
     text-transform: capitalize;
     max-width: 300px;
